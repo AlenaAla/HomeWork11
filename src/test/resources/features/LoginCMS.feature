@@ -17,3 +17,8 @@ Examples:
 
 
 
+  Scenario: Verify Create New User
+    When I fill in required fields on Create New User form with random user values
+    And I click Save
+    Then New User with supplied username created
+
